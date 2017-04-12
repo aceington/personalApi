@@ -12,9 +12,10 @@ app.get('/location', mainCtrl.getLocation);
 app.get('/occupations', mainCtrl.getOccupations);
 app.get('/latestjob', mainCtrl.getLatestJob);
 app.get('/hobbies', mainCtrl.getHobbies);
+app.get('/hobbies/:type', mainCtrl.getHobbiesType);
+app.get('/family', mainCtrl.getFamily);
+app.get('/family/:gender', mainCtrl.getFamilyGender);
 
-
- 
 
 const PORT = 3001;
 app.listen(PORT, () => {
